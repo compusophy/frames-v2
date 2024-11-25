@@ -1,10 +1,10 @@
 export async function GET() {
-  const appUrl = process.env.NEXT_PUBLIC_URL;
+  const appUrl = "https://frames-v2-examples.vercel.app";
 
   const config = {
     config: {
       version: "0.0.0",
-      name: "Frames v2 Demo",
+      name: "compusophy",
       icon: `${appUrl}/icon.png`,
       splashImage: `${appUrl}/splash.png`,
       splashBackgroundColor: "#f7f7f7",
