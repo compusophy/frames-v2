@@ -21,11 +21,11 @@ export default function Demo() {
   }
 
   return (
-    <div className="fixed inset-0 flex justify-center items-center bg-white">
-      <div className="w-[280px] h-[500px] border-2 border-gray-300 rounded-xl flex justify-center items-center bg-white">
+    <div className="fixed inset-8 flex justify-center items-center bg-white">
+      <div className="w-full h-full border-2 border-gray-300 rounded-xl flex justify-center items-center bg-white">
         {context?.user.pfpUrl && (
           <div 
-            className="w-20 h-20 rounded-full overflow-hidden"
+            className="w-16 h-16 rounded-full overflow-hidden"
             style={{
               backgroundImage: `url(${context.user.pfpUrl})`,
               backgroundSize: 'cover',
