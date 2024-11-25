@@ -21,17 +21,19 @@ export default function Demo() {
   }
 
   return (
-    <div className="w-[300px] mx-auto py-4 px-2 relative flex justify-center items-center min-h-screen">
-      {context?.user.pfpUrl && (
-        <div 
-          className="w-32 h-32 rounded-full overflow-hidden"
-          style={{
-            backgroundImage: `url(${context.user.pfpUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-      )}
+    <div className="fixed inset-0 flex justify-center items-center bg-white">
+      <div className="w-[280px] h-[500px] border-2 border-gray-300 rounded-xl flex justify-center items-center bg-white">
+        {context?.user.pfpUrl && (
+          <div 
+            className="w-20 h-20 rounded-full overflow-hidden"
+            style={{
+              backgroundImage: `url(${context.user.pfpUrl})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
+          />
+        )}
+      </div>
     </div>
   );
 }
